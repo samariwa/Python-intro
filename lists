@@ -1,0 +1,58 @@
+'''def remove(listx,listy):
+    listz=list()
+    for n in listx:
+        if n in listy and n not in listz:
+            listz.append(n)
+    return listz    
+listx=[14,22,1,4,2,8,13,56,57,80,5,7]
+listy=[8,6,91,57,7,2,5,100,13,11,12,9,3,80]
+print(remove(listx,listy))'''
+'''
+listx=[14,22,1,4,2,8,13,56,57,80,5,7]
+listy=[8,6,91,57,7,2,5,100,13,11,12,9,3,80]
+listz=list()
+listz=[n for n in listx if n in listy and n not in listz]
+print(listz)
+'''
+
+'''
+mylist=[7,5]
+mylist.append(4)
+mylist.extend([57,12,90,5])
+mylist.extend((57,12,90,5))
+myList.insert(2,89)
+mylist.sort()
+mylist.reverse()
+mylist.merge(listy)
+#counting the elements in the list
+mylist.count
+#delete removes by you declaring the elements index
+del mylist[1]
+#remove removes by you giving the element itself being removed
+mylist.remove(90)
+print(mylist)
+'''
+'''
+negative index
+mylist=[2,3,4]
+print mylist[-2]
+'''
+'''
+list slicing
+a=("a","b","c","d")
+x=slice(3)
+print(a[x])
+
+or
+'''
+'''
+a=("a","b","c","d")
+x=a[0:4]
+print(x)
+'''
+'''
+list comprehension
+a=[4,7,1,5,90,6]
+b=[k**2 for k in a if k%2==0]
+print (b)
+'''
