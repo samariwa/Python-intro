@@ -22,6 +22,10 @@ mylist.extend([57,12,90,5])
 mylist.extend((57,12,90,5))
 myList.insert(2,89)
 mylist.sort()
+#In the following if you dont specify index of the element that you are popping it will remove the last element
+mylist.pop()
+#In the following it will remove the element at index 0
+mylist.pop(0)
 mylist.reverse()
 mylist.merge(listy)
 #counting the elements in the list
