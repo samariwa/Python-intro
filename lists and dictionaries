@@ -166,3 +166,24 @@ class Student(Person):
 studObj=Student()
 studObj.setName('Sam')
 print(studObj.getName())
+
+'''
+class Person:
+    def __init__(self,x):
+        self.age=x
+    def setName(self,newName):
+        self.name=newName
+    def getName(self):
+        return self.name
+    def doubleAge(self):
+        self.age=self.age*2
+class Student(Person):
+    def multiplyAge(self):
+        self.age=self.age*4
+
+studObj=Student(7)
+print(studObj.age)
+studObj.doubleAge()
+print(studObj.age)
+studObj.multiplyAge()
+print(studObj.age)
