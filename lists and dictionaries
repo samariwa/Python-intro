@@ -187,3 +187,7 @@ studObj.doubleAge()
 print(studObj.age)
 studObj.multiplyAge()
 print(studObj.age)
+
+'''
+studObj.multiplyAge()
+print(studObj.age)
