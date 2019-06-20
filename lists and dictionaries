@@ -151,4 +151,18 @@ class Student(Person):
 studObj=Student(56)
 studObj.setName('Sam')
 print(studObj.getName())
+'''
+class Person:
+    def __init__(self,x):
+        self.age=x
+    def setName(self,newName):
+        self.name=newName
+    def getName(self):
+        return self.name
+class Student(Person):
+    def __init__(self):
+        self.age=4
 
+studObj=Student()
+studObj.setName('Sam')
+print(studObj.getName())
