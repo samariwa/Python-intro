@@ -26,6 +26,9 @@ mylist.sort()
 mylist.pop()
 #In the following it will remove the element at index 0
 mylist.pop(0)
+#The following code is for the cloning method
+mylist.copy()
+newlist=oldlist.copy()
 mylist.reverse()
 mylist.merge(listy)
 #counting the elements in the list
@@ -133,4 +136,18 @@ Renaming a module:import myModule as mx
                   mx.greeting("Jonathan")
      This is called an alias(when it has a different name)             
       
- 
+#class inheritance
+class Person:
+    def __init__(self,x):
+        self.age=x
+    def setName(self,newName):
+        self.name=newName
+    def getName(self):
+        return self.name
+class Student(Person):
+    pass
+
+studObj=Student(56)
+studObj.setName('Sam')
+print(studObj.getName())
+
