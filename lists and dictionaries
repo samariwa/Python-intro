@@ -191,3 +191,31 @@ print(studObj.age)
 '''
 studObj.multiplyAge()
 print(studObj.age)
+
+'''
+#super keyword
+class Person:
+    def __init__(self,x):
+        self.age=x
+    def setName(self,newName):
+        self.name=newName
+    def getName(self):
+        return self.name
+    def doubleAge(self):
+        self.age=self.age*2
+    def add(self):
+        self.age+=2
+class Student(Person):
+    def multiplyAge(self):
+        self.age=self.age*4
+    def add(self):
+        self.age+=10
+    def printAge(self):
+        self.add()
+        print(self.age)
+        super().add()
+        print(self.age)
+
+studObj=Student(7)
+studObj.printAge()
+
