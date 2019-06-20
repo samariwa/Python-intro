@@ -137,6 +137,7 @@ Renaming a module:import myModule as mx
      This is called an alias(when it has a different name)             
       
 #class inheritance
+#__init__ defines constructor
 class Person:
     def __init__(self,x):
         self.age=x
