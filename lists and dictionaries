@@ -219,3 +219,20 @@ class Student(Person):
 studObj=Student(7)
 studObj.printAge()
 
+def myFunction(n):
+     return lambda a:a*n
+myLambda =myFunction(12)
+r=myLambda (971)
+print(r)
+
+try:
+    x=int(input('x='))
+    y=int(input('y='))
+    def myFunction(n):
+        return lambda a:a*n
+        myLambda =myFunction(x)
+        r=myLambda (y)    
+except ValueError:
+    print('Value Error')
+else:
+    print(r)
