@@ -236,3 +236,9 @@ except ValueError:
     print('Value Error')
 else:
     print(r)
+
+L1= [9,31,1,4,2,8,13,11,57,5,5,7]
+L2= [3,9,7,57,7,2,5,100,31,11,12,9,3,80]
+L3=list()
+L3=[n for n in L1 if n in L2 and n not in L3]
+print(L3)
